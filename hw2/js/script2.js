@@ -26,17 +26,54 @@ if (a + b > c && b + c > a && a + c > b){
 	if (Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2) ||
 	Math.pow(a, 2) + Math.pow(c, 2) == Math.pow(b, 2) ||
 	Math.pow(b, 2) + Math.pow(c, 2) == Math.pow(a, 2)){
-	console.log("Прямоугольный")
+	console.log("Прямоугольный");
 	} 
 	else if (Math.pow(a, 2) + Math.pow(b, 2) < Math.pow(c, 2) ||
 	Math.pow(a, 2) + Math.pow(c, 2) < Math.pow(b, 2) ||
 	Math.pow(b, 2) + Math.pow(c, 2) < Math.pow(a, 2)){
-	console.log("Тупой")	
+	console.log("Тупой");	
 	} 
 	else {
-	console.log("Острый")
+	console.log("Острый");
 	}	
 	}
 	else {
-	console.log("Не существует")
+	console.log("Не существует");
+	}
+
+console.log("Задание 4_1: не плнял задачу");
+// 	arr = [];
+// let data = prompt("введите число");
+//     arr.length = data;
+
+
+console.log("Задание 4_2:");
+a = 1
+ for (i = 1; i <= 20; ++i){
+ 	a = a * 2;
+ console.log(a);
+}
+
+console.log("Задание 4_3:");
+let height = 10;
+let str = "";
+a = "#";
+for (i = 1; i <= height; i++){
+	str += a;
+	console.log(str);
+}
+
+console.log("Задание 5:");
+let tar = 10;
+let ms = 3;
+for (i = 1; tar !==0 && ms !==0; i++){
+	tar = tar - 1;
+	ms = ms - 0.5;
+	console.log("моющего средства осталось:"+ms);
+	if (tar == 0){
+		console.log("тарелоки закончились")
+	}
+	else if (ms == 0){
+	console.log("тарелок осталось:"+tar)
+	}
 	}
