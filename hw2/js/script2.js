@@ -26,19 +26,19 @@ if (a + b > c && b + c > a && a + c > b){
 	if (Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2) ||
 	Math.pow(a, 2) + Math.pow(c, 2) == Math.pow(b, 2) ||
 	Math.pow(b, 2) + Math.pow(c, 2) == Math.pow(a, 2)){
-	console.log("Прямоугольный");
+	console.log("Прямоугольный треугольник");
 	} 
 	else if (Math.pow(a, 2) + Math.pow(b, 2) < Math.pow(c, 2) ||
 	Math.pow(a, 2) + Math.pow(c, 2) < Math.pow(b, 2) ||
 	Math.pow(b, 2) + Math.pow(c, 2) < Math.pow(a, 2)){
-	console.log("Тупой");	
+	console.log("Тупоугольный треугольник");	
 	} 
 	else {
-	console.log("Острый");
+	console.log("Остроугольный треугольник");
 	}	
 	}
 	else {
-	console.log("Не существует");
+	console.log("Не существует такого треугольника");
 	}
 
 console.log("Задание 4_1: не плнял задачу");
@@ -71,7 +71,7 @@ for (i = 1; tar !==0 && ms !==0; i++){
 	ms = ms - 0.5;
 	console.log("моющего средства осталось:"+ms);
 	if (tar == 0){
-		console.log("тарелоки закончились")
+		console.log("тарелки закончились")
 	}
 	else if (ms == 0){
 	console.log("тарелок осталось:"+tar)
