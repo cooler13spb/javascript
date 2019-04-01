@@ -40,3 +40,11 @@ res = sum(12345);
 console.log(res);
 
 console.log("Задание 3:");
+
+function range(a, b, c) {
+  let arr = [];  
+  for (let i = a; i <= b; i += c) arr.push(i);
+  return arr;
+}
+
+console.log(range(2, 15, 3));
