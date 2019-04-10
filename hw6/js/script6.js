@@ -93,17 +93,15 @@ let articles = [
         }
     ];
 
-//для таблиц онли
+
 let allTable = document.getElementsByTagName("table");
 let table = allTable[0];
 table.setAttribute("border", "1");
 
-let caption = table.createCaption(); //создать заголовок таб
+let caption = table.createCaption();
 caption.innerText = "Задание 2";
 
  
-let row = table.insertRow(0); 
-
  for (let i = 0; i < articles.length; i++){
    let row = table.insertRow(i); 
 
