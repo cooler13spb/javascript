@@ -1,0 +1,25 @@
+.box {
+	width: 300px;
+	border: 1 solid black;
+	background: #CD853F;
+	margin: auto;
+	margin-bottom: 5px;
+	padding:3px 0px 3px 0px;
+}
+
+.box h2{
+	text-align: center;
+	color: #8B4513;
+}
+
+.box img{
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+}
+
+.box p{
+	text-align: center;
+	 color: #800000;
+}
