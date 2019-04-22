@@ -24,27 +24,35 @@ function inText(){
 	img.setAttribute('src', arrImg[randImg]);
 	img.setAttribute('id', 'img');
 	img.classList.add('img');
-	box.appendChild(img);
-
+	
 
 	let name = document.createElement('div');
 	name.classList.add('name');
 	let nameT = arrName[randName];
 	name.appendChild(document.createTextNode(nameT));
-	box.appendChild(name);
 	
-
+	
 	let data = document.createElement('em');
 	data.classList.add('data');
 	let date = Date();
 	data.appendChild(document.createTextNode(date));
-	box.appendChild(data);
-
+	
 
 	let text = document.getElementById('comment').value;
 
+
 	let com = document.createElement('div');
 	com.classList.add('com');
+	
+
+	post.insertBefore(box, post.firstChild);
+
+
+	box.appendChild(img);
+	box.appendChild(name);
+	box.appendChild(data);
 	box.appendChild(com);
 	com.innerHTML = text;
+
+
 }
